@@ -1,0 +1,110 @@
+@use '../../lib/service.scss' as s;
+
+.form {
+    
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+    
+    padding: s.space(4);
+    gap: s.space(8);
+    margin: auto;
+    margin-top: 80px;
+
+    
+
+    &__card {
+        
+        
+        border: 1px solid s.color('light');
+        box-shadow: 2px 2px 4px 0px #bebebe;
+        padding: s.space(8);
+        border-radius: s.space(4);
+        width: 800px;
+    }
+
+    &__title__h2 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    &__title {
+
+        padding: auto;
+        color: royalblue;
+        font-size: 32px;
+        font-weight: bold;
+        padding-bottom: s.space(8);       
+        // border-bottom: 1px solid s.color('light');
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        gap: s.space(8);
+
+    }
+
+    &__content {
+        display: grid;
+        gap: s.space(6);
+        
+
+    }
+
+    &__field {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: s.space(2);
+    }
+
+    &__label {
+        font-size: 18px;
+    }
+
+    &__input {
+        border: 1px solid s.color('light');
+        padding: s.space(2);
+    }
+
+    &__description {
+        border: 1px solid s.color('light');
+        padding: s.space(2);
+        height: 120px;
+    }
+
+    &__text {
+        font-size: 14px;
+        color: gray;
+    }
+
+    &__button {
+        // border: 1px solid s.color('light');
+        height: 80px;
+        padding: s.space(2);
+        border-radius: 8px;
+        background-color: royalblue;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(10);
+}
+
+.product-list {
+    li {
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
