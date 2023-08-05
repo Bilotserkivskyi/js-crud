@@ -1,0 +1,70 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 70%;
+}
+
+.form__card {
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 4px 0px #bebebe;
+  padding: 32px;
+  border-radius: 16px;
+}
+.form__title__h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.form__title {
+  padding-top: 80px;
+  padding-bottom: 32px;
+  color: royalblue;
+  font-size: 32px;
+  font-weight: bold;
+}
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.form__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+.form__label {
+  font-size: 18px;
+}
+.form__input {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.form__description {
+  border: 1px solid #ddd;
+  padding: 8px;
+  height: 100%;
+  padding: 16px;
+  resize: vertical;
+  hyphens: auto;
+}
+.form__text {
+  font-size: 14px;
+  color: gray;
+}
+.form__button {
+  height: auto;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: royalblue;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

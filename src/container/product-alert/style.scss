@@ -1,0 +1,54 @@
+@use '../../lib/service.scss' as s;
+
+.alert {
+
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: s.space(8);
+    
+    border: 2px solid s.color('light');
+    box-shadow: 2px 2px 4px 0px #bebebe;
+    margin-top: s.space(25);
+    width: 80%;
+    height: auto;
+
+    &__vertical {
+        display: flex;
+        flex-direction: column;
+        // padding: s.space(3); 
+        gap: s.space(6);  
+        
+    }
+
+    &__title {
+        font-size:20px;
+        font-weight: bold;
+       
+    }
+
+
+    &__label {
+        font-size: 14px;
+    }
+
+    &__action {
+        font-size: 18px;
+    }
+
+
+    &__button {
+        width: auto;
+        height: auto;
+        padding: s.space(2.5);
+        border-radius: 6px;
+        background-color: royalblue;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        
+    }
+}
+

@@ -1,0 +1,113 @@
+@use '../../lib/service.scss' as s;
+
+.main {
+
+    display: flex;
+    flex-direction: column;
+    // gap: s.space(20);
+    margin: auto;
+    width: 70%;
+   
+}
+
+.form {
+    
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    
+    &__card {
+        
+        border: 1px solid s.color('light');
+        box-shadow: 2px 2px 4px 0px #bebebe;
+        padding: s.space(8);
+        border-radius: s.space(4);
+
+    }
+
+    &__title__h2 {
+
+        font-size: 24px;
+        font-weight: bold;
+
+    }
+
+    &__title {
+
+        padding-top: s.space(20);
+        padding-bottom: s.space(8);
+        color: royalblue;
+        font-size: 32px;
+        font-weight: bold;
+        
+    }
+
+    &__row {
+
+        display: flex;
+        justify-content: space-between;
+        gap: s.space(4);
+
+    }
+
+    &__content {
+
+        display: flex;
+        flex-direction: column;
+        gap: s.space(6);
+
+    }
+
+    &__field {
+
+        display: flex;
+        flex-direction: column;
+        gap: s.space(2);
+        width: 100%;
+
+    }
+
+    &__label {
+
+        font-size: 18px;
+
+    }
+
+    &__input {
+
+        border: 1px solid s.color('light');
+        padding: s.space(2);
+
+    }
+
+    &__description {
+
+        border: 1px solid s.color('light');
+        padding: s.space(2);
+        height: 100%;
+        padding: s.space(4);
+        resize: vertical;
+        hyphens: auto;
+
+    }
+
+    &__text {
+
+        font-size: 14px;
+        color: gray;
+
+    }
+
+    &__button {
+        
+        height: auto;
+        padding: s.space(2);
+        border-radius: 8px;
+        background-color: royalblue;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+
+    }
+    
+}
