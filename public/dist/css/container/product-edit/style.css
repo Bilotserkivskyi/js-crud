@@ -1,14 +1,17 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
 .form {
-  width: 100%;
   margin: auto;
-  margin-top: 80px;
-  padding: 40px;
+  padding: 80px;
 }
 .form__card {
   border: 2px solid #ddd;
   box-shadow: 2px 2px 4px 0px #d2d2d2;
   border-radius: 16px;
-  padding: 32px;
+  padding: 40px;
 }
 .form__title {
   font-size: 24px;
@@ -17,34 +20,40 @@
   margin-bottom: 40px;
 }
 .form__title__h2 {
-  padding-bottom: 16px;
+  padding-bottom: 20px;
   font-size: 20px;
   font-weight: bold;
 }
 .form__data {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: auto;
+  margin: auto;
   gap: 16px;
 }
 .form__field {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
-  padding-top: 16px;
+  padding-top: 32px;
 }
 .form__input {
   border: 2px solid #ddd;
   border-radius: 8px;
-  height: 40px;
-  width: max-content;
-  padding-left: 16px;
+  height: auto;
+  width: auto;
+  padding: 12px;
 }
 .form__description {
   border: 2px solid #ddd;
   border-radius: 8px;
-  height: 80px;
+  width: auto;
+  height: max-content;
   padding-left: 16px;
+  row-gap: 8px;
+  padding: 16px;
+  resize: vertical;
+  hyphens: auto;
 }
 .form__label {
   color: rgb(90, 90, 90);
@@ -69,6 +78,8 @@
   border-radius: 8px;
   width: 100%;
   height: 60px;
+  text-decoration: none;
+  padding: 18px;
 }
 .form__button__delete {
   background-color: rgb(255, 10, 55);
@@ -76,6 +87,8 @@
   border-radius: 8px;
   width: 100%;
   height: 60px;
+  text-decoration: none;
+  padding: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

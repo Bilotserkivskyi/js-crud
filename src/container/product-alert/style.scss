@@ -6,24 +6,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: s.space(4);
+    padding: s.space(8);
     
     border: 2px solid s.color('light');
     box-shadow: 2px 2px 4px 0px #bebebe;
-    margin-top: 80px;
-    width: 67%;
-    height: 100px;
+    margin-top: s.space(25);
+    width: 80%;
+    height: auto;
 
     &__vertical {
         display: flex;
         flex-direction: column;
-        padding: s.space(3); 
-        gap: s.space(4);  
+        // padding: s.space(3); 
+        gap: s.space(6);  
         
     }
 
     &__title {
-        font-size:24px;
+        font-size:20px;
         font-weight: bold;
        
     }
@@ -34,22 +34,20 @@
     }
 
     &__action {
-        font-size: 20px;
+        font-size: 18px;
     }
 
 
     &__button {
-        width: 240px;
-        height: 40px;
-        padding: s.space(2);
-        border-radius: 8px;
+        width: auto;
+        height: auto;
+        padding: s.space(2.5);
+        border-radius: 6px;
         background-color: royalblue;
         text-align: center;
         color: white;
+        font-size: 18px;
         text-decoration: none;
-        
-
-
         
     }
 }

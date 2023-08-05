@@ -69,8 +69,6 @@ class Product {
     this.description = description
   }
 
-  // getById = (id) => this.id === id
-
   static add = (product) => {
     this.#list.push(product)
   }
@@ -105,12 +103,14 @@ class Product {
     }
   }
 
-  static update = (product, { id }) => {
-    if (id) {
-      product.id = id
-      // product.name = name
-      // product.price = price
-      // product.description = description
+  static update = (
+    product,
+    { name, price, description },
+  ) => {
+    if ((name, price, description)) {
+      product.name = name
+      product.price = price
+      product.description = description
     }
   }
 }
@@ -286,15 +286,6 @@ router.get('/product-edit', function (req, res) {
 })
 // ↑↑ сюди вводимо JSON дані
 
-//++++++++++++++++++++++++++
-// router.get('/product-edit', function (req, res) {
-//   res.render('product-edit', {
-//     // вказуємо назву папки контейнера, в якій знаходяться наші стилі
-//     style: 'product-edit',
-//   })
-// })
-// // ↑↑ сюди вводимо JSON дані
-
 // ================================================================
 
 router.post('/product-edit', function (req, res) {
@@ -311,21 +302,16 @@ router.post('/product-edit', function (req, res) {
   console.log(product)
 
   if (product) {
-    // ↙️ cюди вводимо назву файлу з сontainer
     res.render('product-alert', {
-      // вказуємо назву папки контейнера, в якій знаходяться наші стилі
       style: 'product-alert',
       info: 'Інформація про товар оновлена',
     })
   } else {
-    // ↙️ cюди вводимо назву файлу з сontainer
     res.render('product-alert', {
-      // вказуємо назву папки контейнера, в якій знаходяться наші стилі
       style: 'product-alert',
       info: 'Помилка оновлення товару',
     })
   }
-  // ↑↑ сюди вводимо JSON дані
 })
 
 // ================================================================
@@ -337,9 +323,7 @@ router.get('/product-delete', function (req, res) {
 
   res.render('product-alert', {
     style: 'product-alert',
-    info: result
-      ? 'Товар успішно видалений'
-      : 'Помилка видалення товару',
+    info: 'Товар успішно видалений',
   })
 })
 

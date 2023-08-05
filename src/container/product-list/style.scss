@@ -1,35 +1,37 @@
 @use '../../lib/service.scss' as s;
 
+.main {
+
+    // display: flex;
+    // flex-direction: column;
+    // align-content: center;
+    // margin: auto;
+    margin: s.space(20) s.space(20);
+
+}
+
+
 .product {
 
-    padding: s.space(16);
-
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+   
     &__title {
+
         font-size: 24px;
         color: royalblue;
         font-weight: bold;
-        margin-bottom: s.space(8);
+        margin-bottom: s.space(10);
         
-    }
-
-    &__list {
-        // display: grid;
-        // justify-content: center;
-        // grid-template-columns: 1fr 1fr 1fr;
-        // // grid-template-rows: auto;
-        // column-gap: s.space(6);
-        // row-gap: s.space(12);
-
     }
 
     &__empty {
 
-        display: flex;
-        justify-content: center;
         text-align: center;
-        padding: s.space(7);
-        width: 160px;
-        height: 80px;
+        width: 100%;
+        height: max-content;
+        padding: s.space(10);
         border: 1px solid s.color('light');
         box-shadow: 2px 2px 4px 0px #bebebe;    
         border-radius: s.space(2);

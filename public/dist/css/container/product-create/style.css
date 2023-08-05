@@ -1,44 +1,42 @@
-.form {
+.main {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  gap: 32px;
+  flex-direction: column;
   margin: auto;
-  margin-top: 80px;
+  width: 70%;
 }
+
 .form__card {
   border: 1px solid #ddd;
   box-shadow: 2px 2px 4px 0px #bebebe;
   padding: 32px;
   border-radius: 16px;
-  width: 800px;
 }
 .form__title__h2 {
   font-size: 24px;
   font-weight: bold;
 }
 .form__title {
-  padding: auto;
+  padding-top: 80px;
+  padding-bottom: 32px;
   color: royalblue;
   font-size: 32px;
   font-weight: bold;
-  padding-bottom: 32px;
 }
 .form__row {
   display: flex;
   justify-content: space-between;
-  gap: 32px;
+  gap: 16px;
 }
 .form__content {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 .form__field {
   display: flex;
-  width: 100%;
   flex-direction: column;
   gap: 8px;
+  width: 100%;
 }
 .form__label {
   font-size: 18px;
@@ -50,32 +48,23 @@
 .form__description {
   border: 1px solid #ddd;
   padding: 8px;
-  height: 120px;
+  height: 100%;
+  padding: 16px;
+  resize: vertical;
+  hyphens: auto;
 }
 .form__text {
   font-size: 14px;
   color: gray;
 }
 .form__button {
-  height: 80px;
+  height: auto;
   padding: 8px;
   border-radius: 8px;
   background-color: royalblue;
   color: white;
   font-size: 24px;
   font-weight: bold;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.product-list li {
-  padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
