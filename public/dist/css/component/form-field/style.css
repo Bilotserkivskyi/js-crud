@@ -1,0 +1,12 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 50%;
+}
+
+.field__label {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */

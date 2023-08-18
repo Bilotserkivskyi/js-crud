@@ -1,0 +1,92 @@
+<main class="main">
+    <form method="POST" action="/purchase-edit?id={{id}}" class="form-card">
+        {{>heading}}
+        {{#with data.purchase}}
+            <div class="form-field">
+                <div class="field">
+                    <label for="id" class="field__label">ID:</label>
+                    <input type="number" value="{{id}}" name="id" class="field__input">
+                </div>
+            </div>
+
+            {{>divider}}
+            <div>
+                <div class="form-field"> 
+                    <div class="field">
+                        <label for="firstname" class="field__label">Ім’я:</label>
+                        <input type="number" value="{{firstname}}" name="firstname" class="field__input">
+                    </div>
+
+                    <div class="field">
+                        <label for="lastname" class="field__label">Прізвище:</label>
+                        <input type="text" value="{{lastname}}" name="lastname" class="field__input">
+                    </div>
+                </div>  
+
+                <div class="form-field"> 
+                    <div class="field">
+                        <label for="phone" class="field__label">Телефон:</label>
+                        <input type="number" value="{{phone}}" name="phone" class="field__input">
+                    </div>
+
+                    <div class="field">
+                        <label for="email" class="field__label">email:</label>
+                        <input type="email" value="{{email}}" name="email" class="field__input">
+                    </div>
+                </div> 
+            </div>
+        {{/with}}
+
+        {{>divider}}
+
+        <div class="form-field__address"> 
+            <div class="field">
+                <label for="address" class="field__label">Адреса доставки:</label>
+                <input type="text" value="{{address}}" name="address" class="field__input">
+            </div>
+
+           <div class="field">
+                <label for="product" class="field__label">Назва товару:</label>
+                <input type="text" value="{{product}}" name="product" class="field__input">
+            </div>
+        </div> 
+
+        {{>divider}}
+
+        {{#with data.purchase}}
+            <div>
+                <div class="form-field"> 
+                    <div class="field">
+                        <label for="productPrice" class="field__label">Вартість товарів:</label>
+                        <input type="number" value="{{productPrice}}" name="productPrice" class="field__input">
+                    </div>
+                    <div class="field">
+                        <label for="deliveryPrice" class="field__label">Вартість доставки:</label>
+                        <input type="number" value="{{deliveryPrice}}" name="deliveryPrice" class="field__input">
+                    </div>
+                    
+                </div>  
+
+                <div class="form-field"> 
+                    
+                    <div class="field">
+                        <label for="totalPrice" class="field__label">Сума до сплати:</label>
+                        <input type="number" value="{{totalPrice}}" name="totalPrice" class="field__input">
+                    </div>
+
+                <div class="field">
+                        <label for="bonus" class="field__label">Нараховані бонуси:</label>
+                        <input type="number" value="{{bonus}}" name="bonus" class="field__input">
+                    </div>
+                </div> 
+            </div>
+        {{/with}}
+
+        {{>divider}}
+
+        <a href='/purchase-edit?id={id}}'>
+           {{>button text="Змінити дані"}}
+        </a>
+       
+     </form>
+</main>
