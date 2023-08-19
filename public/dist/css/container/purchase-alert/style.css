@@ -1,0 +1,64 @@
+.button {
+  background-color: rgb(0, 120, 255);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  width: 100%;
+}
+.button:hover {
+  opacity: 0.7;
+}
+
+.card {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  border: 2px solid #ddd;
+  box-shadow: 2px 2px 4px 0px #bebebe;
+  border-radius: 16px;
+  margin-top: 100px;
+  width: 80%;
+  height: auto;
+}
+.card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.card__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card__subtitle {
+  font-size: 16px;
+}
+.card__button {
+  font-size: 18px;
+  width: auto;
+  height: auto;
+  padding: 12px;
+  border-radius: 6px;
+  background-color: rgb(0, 120, 255);
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.button {
+  background-color: rgb(0, 120, 255);
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  width: auto;
+  height: auto;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,65 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/button/style.scss' as button;
+
+.card {
+
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: s.space(8);
+    
+    border: 2px solid s.color(light);
+    box-shadow: 2px 2px 4px 0px #bebebe;
+    border-radius: s.space(4);
+    margin-top: s.space(25);
+    width: 80%;
+    height: auto;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        // padding: s.space(3); 
+        gap: s.space(6); 
+        
+        
+    }
+
+    &__title {
+        font-size:20px;
+        font-weight: bold;
+    }
+
+
+    &__subtitle {
+        font-size: 16px;
+        
+    }
+
+    &__button {
+        font-size: 18px;
+        width: auto;
+        height: auto;
+        padding: s.space(3);
+        border-radius: 6px;
+        background-color: s.color(main);
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+}
+
+.button {
+    background-color: s.color(main);
+    color: white;
+    padding: s.space(2);
+    border-radius: 6px;
+    width: auto;
+    height: auto;
+    font-size: 18px;
+
+}
+

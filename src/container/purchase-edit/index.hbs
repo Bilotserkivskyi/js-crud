@@ -1,0 +1,43 @@
+<main class="main">
+     
+    {{#with data}}
+    <form id="editForm" method="POST" action="/purchase-edit?id={{id}}" class="form-card">
+       {{>heading title="Інформація про товар"}}
+       
+            <div class="form-field">
+                <div class="field">
+                    <label for="id" class="field__label">ID:</label>
+                    <input type="number" value="{{id}}" name="id" readonly>
+                </div>
+            </div>
+
+       
+            <div>
+                <div class="form-field"> 
+                    <div class="field">
+                        <label for="firstname" class="field__label">Ім’я:</label>
+                        <input type="text" value="{{firstname}}" name="firstname" class="field__input">
+                    </div>
+
+                    <div class="field">
+                        <label for="lastname" class="field__label">Прізвище:</label>
+                        <input type="text" value="{{lastname}}" name="lastname" class="field__input">
+                    </div>
+                </div>  
+
+                <div class="form-field"> 
+                    <div class="field">
+                        <label for="phone" class="field__label">Телефон:</label>
+                        <input type="number" value="{{phone}}" name="phone" class="field__input">
+                    </div>
+
+                    <div class="field">
+                        <label for="email" class="field__label">email:</label>
+                        <input type="email" value="{{email}}" name="email" class="field__input">
+                    </div>
+                </div> 
+            </div>
+        {{>button text="Зберігти зміни"}} 
+     </form>
+     {{/with}}
+</main>
