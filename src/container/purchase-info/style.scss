@@ -26,16 +26,34 @@
     
     display: flex;
     width: 100%;
-    margin: s.space(6) 0;
-    
+    margin: s.space(6) 0;  
 
 }
 
-.form-field__address {
+.form-field__long {
+    
     display: flex;
+   
     flex-direction: column;
     margin: s.space(6) 0;
-    gap: s.space(4);
+    gap: s.space(2);
+    
+    width: 100%;
+   
+
+}
+
+// .form-field__address {
+//     display: flex;
+//     flex-direction: column;
+//     margin: s.space(6) 0;
+//     gap: s.space(4);
+//     width: auto;
+
+// }
+
+.field__input--address {
+    width: 100%;
 }
 
 .button {

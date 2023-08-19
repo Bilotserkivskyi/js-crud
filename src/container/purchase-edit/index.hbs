@@ -1,7 +1,9 @@
 <main class="main">
-    <form method="POST" action="/purchase-edit?id={{id}}" class="form-card">
-        {{>heading}}
-        {{#with data.purchase}}
+     
+    {{#with data}}
+    <form id="editForm" method="POST" action="/purchase-edit?id={{id}}" class="form-card">
+       {{>heading title="Інформація про товар"}}
+       
             <div class="form-field">
                 <div class="field">
                     <label for="id" class="field__label">ID:</label>
@@ -14,7 +16,7 @@
                 <div class="form-field"> 
                     <div class="field">
                         <label for="firstname" class="field__label">Ім’я:</label>
-                        <input type="number" value="{{firstname}}" name="firstname" class="field__input">
+                        <input type="text" value="{{firstname}}" name="firstname" class="field__input">
                     </div>
 
                     <div class="field">
@@ -35,9 +37,7 @@
                     </div>
                 </div> 
             </div>
-        {{/with}}
-       
-        {{>button text="Зберігти зміни"}}  
-       
+        {{>button text="Зберігти зміни"}} 
      </form>
+     {{/with}}
 </main>

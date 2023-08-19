@@ -41,6 +41,7 @@
   font-size: 16px;
   cursor: pointer;
   transition: opacity 0.3s ease;
+  width: 100%;
 }
 .button:hover {
   opacity: 0.7;
@@ -68,11 +69,16 @@
   margin: 24px 0;
 }
 
-.form-field__address {
+.form-field__long {
   display: flex;
   flex-direction: column;
   margin: 24px 0;
-  gap: 16px;
+  gap: 8px;
+  width: 100%;
+}
+
+.field__input--address {
+  width: 100%;
 }
 
 .button {
