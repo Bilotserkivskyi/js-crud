@@ -1,0 +1,10 @@
+<div class="alert">
+  {{#with data}}
+  <div class="alert__vertical">
+    <h1 class="alert__title">{{message}}</h1>
+    <p class="alert__action">{{info}}</p>
+  </div>
+  {{!-- <button type="submit" url="src/container/product-list/index.hbs" class="alert__button">Повернутись назад</button> --}}
+  <a href="{{link}}" class="alert__button">Повернутись назад</a>
+  {{/with}}
+</div>

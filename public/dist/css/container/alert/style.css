@@ -1,0 +1,40 @@
+.alert {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  border: 2px solid #ddd;
+  box-shadow: 2px 2px 4px 0px #bebebe;
+  margin-top: 100px;
+  width: 80%;
+  height: auto;
+}
+.alert__vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.alert__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.alert__label {
+  font-size: 14px;
+}
+.alert__action {
+  font-size: 18px;
+}
+.alert__button {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: royalblue;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
