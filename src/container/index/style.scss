@@ -1,0 +1,54 @@
+@use '../../lib/service.scss' as s;
+
+.library {
+    background-color: s.color(dark);    
+    height: 100%;   
+    padding-top: s.space(10);
+}
+
+.library__block {
+    width: 70%;
+    margin: auto;
+}
+
+.library__title {
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+    padding-bottom: s.space(10);
+    
+}
+
+.header {
+    color: s.color(light);
+    font-size: 28px;
+}
+
+.library__element {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(4);
+    padding-bottom: s.space(4);
+}
+
+.library__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+.library__name {
+    color: s.color(light);
+    font-size: 20px;
+}
+
+.library__amount {
+    color: s.color(gray);
+}
+
+.library__content {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(2)    
+}
+
+

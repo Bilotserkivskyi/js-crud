@@ -17,7 +17,7 @@
 
 .product-card {
   border-radius: 10px;
-  border: 1px solid gray;
+  border: 1px solid #ced4da;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -37,12 +37,14 @@
 
 .product-card__subtitle {
   font-size: 16px;
+  color: #bdbdbd;
 }
 
 .product-card__category {
   padding: 4px 12px;
   border-radius: 30px;
   font-size: 14px;
+  color: #121212;
   border: 1px solid transparent;
 }
 
@@ -96,7 +98,7 @@
 .product-info__divider {
   width: 100%;
   height: 1px;
-  background: gray;
+  background: #ced4da;
 }
 
 .button {
@@ -124,7 +126,7 @@
 .product-info__divider {
   width: 100%;
   height: 1px;
-  background: gray;
+  background: #ced4da;
 }
 
 .product-info {
@@ -153,6 +155,7 @@
 
 .product-info__subtitle {
   font-size: 16px;
+  color: #bdbdbd;
 }
 
 .product-info__category {
